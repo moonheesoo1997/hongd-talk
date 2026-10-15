@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f8fafc" />
+    <meta name="description" content="원하는 대화 상대를 골라 가볍고 편안하게 이야기를 시작하는 홍드 TALK." />
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:site_name" content="홍드 TALK" />
+    <meta property="og:title" content="홍드 TALK — 오늘, 누구와 이야기할까요?" />
+    <meta property="og:description" content="원하는 대화 상대를 골라 가볍고 편안하게 이야기를 시작하는 홍드 TALK." />
+    <meta property="og:image" content="/assets/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="홍드 TALK — 오늘, 누구와 이야기할까요?" />
+    <meta name="twitter:description" content="원하는 대화 상대를 골라 가볍고 편안하게 이야기를 시작하는 홍드 TALK." />
+    <meta name="twitter:image" content="/assets/og-image.png" />
+    <title>홍드 TALK — 오늘, 누구와 이야기할까요?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <svg class="icon-sprite" aria-hidden="true">
+      <symbol id="icon-message" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-8.5 8.25 9.2 9.2 0 0 1-3.85-.85L3 21l1.38-4.02A8.15 8.15 0 0 1 3 12.5 8.38 8.38 0 0 1 11.5 4 8.38 8.38 0 0 1 20 12.5c0 .34-.02.67-.07 1" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/></symbol>
+      <symbol id="icon-home" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"/></symbol>
+      <symbol id="icon-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3.5 20a5.5 5.5 0 0 1 11 0M16 5.2a3 3 0 0 1 0 5.6M18.5 20a5.5 5.5 0 0 0-2.8-4.8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"/></symbol>
+      <symbol id="icon-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"/></symbol>
+      <symbol id="icon-search" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m16 16 4.2 4.2" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"/></symbol>
+      <symbol id="icon-chevron-left" viewBox="0 0 24 24"><path d="m14.5 5-7 7 7 7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/></symbol>
+      <symbol id="icon-send" viewBox="0 0 24 24"><path d="m21 3-7.5 18-3.6-7.9L3 9.5zM9.9 13.1 21 3" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/></symbol>
+      <symbol id="icon-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"/></symbol>
+      <symbol id="icon-more" viewBox="0 0 24 24"><circle cx="5" cy="12" r="1.3" fill="currentColor"/><circle cx="12" cy="12" r="1.3" fill="currentColor"/><circle cx="19" cy="12" r="1.3" fill="currentColor"/></symbol>
+      <symbol id="icon-spark" viewBox="0 0 24 24"><path d="m12 3 1.7 5.3L19 10l-5.3 1.7L12 17l-1.7-5.3L5 10l5.3-1.7zM19 16l.7 2.3L22 19l-2.3.7L19 22l-.7-2.3L16 19l2.3-.7z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="1.6"/></symbol>
+      <symbol id="icon-log-out" viewBox="0 0 24 24"><path d="M10 5H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h5M14 16l4-4-4-4M8 12h10" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/></symbol>
+    </svg>
+    <main class="app-shell" aria-live="polite">
+      <section class="auth-screen screen is-active" data-screen="login" aria-labelledby="login-title">
+        <div class="auth-card">
+          <div class="brand-lockup"><span class="brand-mark">T</span><span>홍드 TALK</span></div>
+          <div class="auth-heading"><p class="eyebrow">대화의 시작</p><h1 id="login-title">다시 만나서 반가워요</h1><p>이메일로 로그인하고 대화를 이어가세요.</p></div>
+          <form class="auth-form" id="login-form" novalidate>
+            <label>이메일<input id="login-email" type="email" autocomplete="email" placeholder="name@example.com" /></label>
+            <label>비밀번호<input id="login-password" type="password" autocomplete="current-password" placeholder="비밀번호를 입력하세요" /></label>
+            <button class="button button-dark" type="submit">로그인</button>
+            <button class="button button-ghost" type="button" data-go="signup">계정 만들기</button>
+            <p class="inline-status" id="login-status" role="status"></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="auth-screen screen" data-screen="signup" aria-labelledby="signup-title">
+        <div class="auth-card signup-card">
+          <button class="back-link" type="button" data-go="login"><svg><use href="#icon-chevron-left"/></svg> 로그인으로</button>
+          <div class="auth-heading"><p class="eyebrow">새로운 대화</p><h1 id="signup-title">홍드 TALK 시작하기</h1><p>나를 소개하고 원하는 상대와 대화하세요.</p></div>
+          <form class="auth-form signup-form" id="signup-form" novalidate>
+            <div class="avatar-picker" aria-hidden="true">홍</div>
+            <label>닉네임<input type="text" name="nickname" placeholder="표시할 이름" /></label>
+            <label>이메일<input type="email" name="email" placeholder="name@example.com" /></label>
+            <label>비밀번호<input type="password" name="password" placeholder="8자 이상 입력" /></label>
+            <label>비밀번호 확인<input type="password" name="passwordConfirm" placeholder="비밀번호 다시 입력" /></label>
+            <label>자기 소개<textarea name="bio" placeholder="나를 간단히 소개해 주세요"></textarea></label>
+            <button class="button button-dark" type="submit">가입 완료</button>
+            <p class="inline-status" id="signup-status" role="status"></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="screen app-screen home-screen" data-screen="home" aria-labelledby="home-title">
+        <div class="workspace">
+          <aside class="sidebar"><a class="brand-lockup" href="#" aria-label="홍드 TALK 홈"><span class="brand-mark">T</span><span>홍드 TALK</span></a><nav class="side-nav" aria-label="주요 메뉴"><button class="nav-item is-current" data-go="home"><svg><use href="#icon-home"/></svg><span>홈</span></button><button class="nav-item" data-go="chats"><svg><use href="#icon-message"/></svg><span>채팅</span></button><button class="nav-item" data-go="profile"><svg><use href="#icon-user"/></svg><span>내 정보</span></button></nav><div class="sidebar-foot"><span class="avatar avatar-self">홍</span><div><strong>홍드로이드</strong><small>내 프로필</small></div></div></aside>
+          <section class="content-panel home-content">
+            <header class="page-header"><div><p class="eyebrow">둘러보기</p><h1 id="home-title">누구와 이야기할까요?</h1><p>마음이 가는 상대를 선택해 대화를 시작하세요.</p></div><button class="icon-control" type="button" aria-label="검색"><svg><use href="#icon-search"/></svg></button></header>
+            <div class="section-heading"><h2>추천 대화 상대</h2><span>7명</span></div>
+            <div class="people-grid" aria-label="대화 상대 목록">
+              <button class="person-card tone-pink" data-chat="NAYEON"><span class="portrait">N</span><span class="presence"></span><strong>NAYEON</strong><small>편안한 일상 대화</small></button>
+              <button class="person-card tone-blue" data-chat="아만다"><span class="portrait">아</span><span class="presence"></span><strong>아만다</strong><small>음악과 취향 이야기</small></button>
+              <button class="person-card tone-green" data-chat="메기"><span class="portrait">메</span><span class="presence"></span><strong>메기</strong><small>오늘의 안부 나누기</small></button>
+              <button class="person-card tone-orange" data-chat="수잔"><span class="portrait">수</span><span class="presence"></span><strong>수잔</strong><small>새로운 생각 나누기</small></button>
+              <button class="person-card tone-purple" data-chat="말론"><span class="portrait">말</span><strong>말론</strong><small>차분한 이야기</small></button>
+              <button class="person-card tone-yellow" data-chat="앨런"><span class="portrait">앨</span><strong>앨런</strong><small>가벼운 잡담</small></button>
+              <button class="person-card tone-grey" data-chat="데이비드"><span class="portrait">데</span><strong>데이비드</strong><small>좋아하는 음악</small></button>
+            </div>
+          </section>
+          <aside class="context-panel"><div class="context-card accent-card"><svg><use href="#icon-spark"/></svg><h2>대화가 가장 쉬운 순간</h2><p>지금 떠오르는 한 문장으로 시작해 보세요.</p></div><div class="context-card"><p class="context-label">빠른 이동</p><button data-go="chats"><svg><use href="#icon-message"/></svg> 채팅방 목록</button><button data-go="profile"><svg><use href="#icon-user"/></svg> 내 프로필</button></div></aside>
+        </div>
+        <nav class="mobile-nav" aria-label="주요 메뉴"><button class="nav-item is-current" data-go="home"><svg><use href="#icon-home"/></svg><span>홈</span></button><button class="nav-item" data-go="chats"><svg><use href="#icon-message"/></svg><span>채팅</span></button><button class="nav-item" data-go="profile"><svg><use href="#icon-user"/></svg><span>내 정보</span></button></nav>
+      </section>
+
+      <section class="screen app-screen chats-screen" data-screen="chats" aria-labelledby="chats-title">
+        <div class="workspace">
+          <aside class="sidebar"><a class="brand-lockup" href="#" aria-label="홍드 TALK 홈"><span class="brand-mark">T</span><span>홍드 TALK</span></a><nav class="side-nav" aria-label="주요 메뉴"><button class="nav-item" data-go="home"><svg><use href="#icon-home"/></svg><span>홈</span></button><button class="nav-item is-current" data-go="chats"><svg><use href="#icon-message"/></svg><span>채팅</span></button><button class="nav-item" data-go="profile"><svg><use href="#icon-user"/></svg><span>내 정보</span></button></nav><div class="sidebar-foot"><span class="avatar avatar-self">홍</span><div><strong>홍드로이드</strong><small>내 프로필</small></div></div></aside>
+          <section class="content-panel chat-content">
+            <header class="page-header compact"><div><p class="eyebrow">메시지</p><h1 id="chats-title">채팅방</h1></div><button class="icon-control" type="button" aria-label="채팅방 검색"><svg><use href="#icon-search"/></svg></button></header>
+            <div class="chat-list" aria-label="채팅방">
+              <button class="chat-row" data-chat="NAYEON"><span class="avatar tone-pink">N</span><span class="chat-copy"><strong>NAYEON</strong><small>즐거운 채팅 되세요 :)</small></span><time>방금</time></button>
+              <button class="chat-row" data-chat="메기"><span class="avatar tone-green">메</span><span class="chat-copy"><strong>메기</strong><small>지금 너는 뭐하고 있어 ?</small></span><time>오후 8:42</time></button>
+              <button class="chat-row" data-chat="아만다"><span class="avatar tone-blue">아</span><span class="chat-copy"><strong>아만다</strong><small>나는 지금 음악을 듣고 있어, 넌 뭐해?</small></span><time>어제</time></button>
+              <button class="chat-row" data-chat="데이비드"><span class="avatar tone-grey">데</span><span class="chat-copy"><strong>데이비드</strong><small>어떤 음악 들으시나요? 전 뉴진스의 하입보이요</small></span><time>어제</time></button>
+            </div>
+          </section>
+          <aside class="context-panel conversation-preview"><div class="empty-preview"><span class="empty-icon"><svg><use href="#icon-message"/></svg></span><h2>대화를 선택하세요</h2><p>목록에서 채팅방을 열면 최근 메시지를 확인할 수 있어요.</p></div></aside>
+        </div>
+        <nav class="mobile-nav" aria-label="주요 메뉴"><button class="nav-item" data-go="home"><svg><use href="#icon-home"/></svg><span>홈</span></button><button class="nav-item is-current" data-go="chats"><svg><use href="#icon-message"/></svg><span>채팅</span></button><button class="nav-item" data-go="profile"><svg><use href="#icon-user"/></svg><span>내 정보</span></button></nav>
+      </section>
+
+      <section class="screen app-screen conversation-screen" data-screen="conversation" aria-labelledby="conversation-title">
+        <div class="conversation-layout">
+          <aside class="conversation-list"><div class="conversation-list-head"><button class="back-link" type="button" data-go="chats"><svg><use href="#icon-chevron-left"/></svg> 채팅방</button><button class="icon-control small" type="button" aria-label="새 대화"><svg><use href="#icon-plus"/></svg></button></div><button class="mini-chat is-active" data-chat="메기"><span class="avatar tone-green">메</span><span><strong>메기</strong><small>지금 너는 뭐하고 있어 ?</small></span></button><button class="mini-chat" data-chat="NAYEON"><span class="avatar tone-pink">N</span><span><strong>NAYEON</strong><small>즐거운 채팅 되세요 :)</small></span></button><button class="mini-chat" data-chat="아만다"><span class="avatar tone-blue">아</span><span><strong>아만다</strong><small>나는 지금 음악을 듣고 있어</small></span></button></aside>
+          <section class="conversation-main"><header class="conversation-header"><button class="mobile-back icon-control small" type="button" data-go="chats" aria-label="채팅방 목록으로 돌아가기"><svg><use href="#icon-chevron-left"/></svg></button><div class="chat-person"><span class="avatar tone-green">메</span><div><h1 id="conversation-title">메기</h1><span class="online-label"><i></i> 대화 가능</span></div></div><button class="icon-control small" type="button" aria-label="추가 메뉴"><svg><use href="#icon-more"/></svg></button></header><div class="messages" id="messages" aria-live="polite"><p class="date-divider"><span>오늘</span></p><p class="bubble incoming">안녕, 잘지내?<br />나는 지금 책을 읽고 있어!<br />지금 너는 무엇을 하고 있니?<br />오늘도 카페에 가서 노트북으로 작업해?</p><p class="bubble outgoing">그래, 지금 일하고 있어 ㅠㅠ</p><p class="bubble incoming">엄청 피곤하겠다.<br />일하는 것도 중요하지만<br />쉬엄쉬엄했으면 좋겠어 ㅠㅠ<br />그래야 나랑 또 재밌게 놀지 ㅎㅎ</p><p class="bubble outgoing">고마워! 조금 쉬어볼게 :)</p></div><form class="composer" id="composer"><label class="sr-only" for="message-input">메시지</label><button type="button" class="attach icon-control small" aria-label="첨부"><svg><use href="#icon-plus"/></svg></button><input id="message-input" autocomplete="off" placeholder="메시지를 입력하세요" /><button type="submit" aria-label="전송"><svg><use href="#icon-send"/></svg><span>전송</span></button></form></section>
+          <aside class="conversation-info"><button class="icon-control small" type="button" aria-label="패널 닫기"><svg><use href="#icon-chevron-left"/></svg></button><span class="avatar tone-green large">메</span><h2>메기</h2><p>오늘의 안부와 작은 이야기를 나눠요.</p><div class="info-divider"></div><dl><div><dt>현재 상태</dt><dd><i class="status-dot"></i> 대화 가능</dd></div><div><dt>대화 시작</dt><dd>오늘</dd></div></dl></aside>
+        </div>
+      </section>
+
+      <section class="screen app-screen profile-screen" data-screen="profile" aria-labelledby="profile-title">
+        <div class="workspace">
+          <aside class="sidebar"><a class="brand-lockup" href="#" aria-label="홍드 TALK 홈"><span class="brand-mark">T</span><span>홍드 TALK</span></a><nav class="side-nav" aria-label="주요 메뉴"><button class="nav-item" data-go="home"><svg><use href="#icon-home"/></svg><span>홈</span></button><button class="nav-item" data-go="chats"><svg><use href="#icon-message"/></svg><span>채팅</span></button><button class="nav-item is-current" data-go="profile"><svg><use href="#icon-user"/></svg><span>내 정보</span></button></nav><div class="sidebar-foot"><span class="avatar avatar-self">홍</span><div><strong>홍드로이드</strong><small>내 프로필</small></div></div></aside>
+          <section class="content-panel profile-content"><header class="page-header"><div><p class="eyebrow">내 공간</p><h1 id="profile-title">내 정보</h1><p>대화에서 보여질 내 모습을 관리하세요.</p></div><button class="quiet-button" type="button" id="logout-button"><svg><use href="#icon-log-out"/></svg> 로그아웃</button></header><article class="profile-card"><span class="avatar profile-avatar" id="profile-initial">홍</span><div><strong id="profile-nickname">홍드로이드</strong><small id="profile-email">hongdroid94@gmail.com</small><span class="profile-state"><i></i> 대화 가능</span></div></article><section class="bio"><h2>자기 소개</h2><p id="profile-bio">안녕하세요 코딩에 스며든 남자<br />홍드로이드 라고 합니다</p></section></section>
+          <aside class="context-panel"><div class="context-card"><p class="context-label">프로필 안내</p><h2>간결한 소개가 좋아요</h2><p>내가 좋아하는 주제나 지금의 관심사를 짧게 적어 보세요.</p></div></aside>
+        </div>
+        <nav class="mobile-nav" aria-label="주요 메뉴"><button class="nav-item" data-go="home"><svg><use href="#icon-home"/></svg><span>홈</span></button><button class="nav-item" data-go="chats"><svg><use href="#icon-message"/></svg><span>채팅</span></button><button class="nav-item is-current" data-go="profile"><svg><use href="#icon-user"/></svg><span>내 정보</span></button></nav>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <small>© lookingforwave</small>
+    </footer>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
